@@ -12,7 +12,7 @@ Bu android uygulaması Alan AI Apı kullanarak listeye eleman ekleme, silme, gü
 
 https://github.com/oykuyildirim/alan_robot/assets/37236494/c85c0cc2-17e4-4f03-a950-215c5a57b3d7
 
-# Alan AI STUDİO Code <p>
+# Alan AI STUDIO Code <p>
 
 
 intent('Add list $(my_item* (.+))', p => {
