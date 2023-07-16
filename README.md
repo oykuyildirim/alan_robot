@@ -12,6 +12,55 @@ Bu android uygulaması Alan AI Apı kullanarak listeye eleman ekleme, silme, gü
 
 https://github.com/oykuyildirim/alan_robot/assets/37236494/c85c0cc2-17e4-4f03-a950-215c5a57b3d7
 
+# Alan AI STUDİO Code <p>
+
+
+intent('Add list $(my_item* (.+))', p => {
+    p.play('I will add');
+    p.play({command: 'add_list', item:p.my_item.value})
+});
+
+intent('Remove $(my_item* (.+)) from list ', p => {
+    p.play('I will remove');
+    p.play({command: 'remove_list', item:p.my_item.value})
+});
+
+intent('Update $(my_item* (.+)) to $(upd_item* (.+)) ', p => {
+    p.play('Updating item');
+    p.play({command: 'update_item', item:p.my_item.value, updated:p.upd_item.value })
+});
+
+intent('open google', p => {
+    p.play('I will go google');
+    p.play({command: 'open_google'})
+});
+
+intent('weather forecast', p => {
+    p.play('I will go wheater forecast page');
+    p.play({command: 'open_weather'})
+});
+
+intent('call', p => {
+    p.play('opening calling screen');
+    p.play({command: 'call'})
+});
+
+// Give your AI assistant some knowledge about the world
+corpus(`
+    Hello, I'm Alan.
+    This is a demo application.
+    You can learn how to teach Alan useful skills.
+    I can teach you how to write Alan Scripts.
+    I can help you. I can do a lot of things. I can answer questions. I can do tasks.
+    But they should be relevant to this application.
+    I can help with this application.
+    I'm Alan. I'm a virtual assistant. I'm here to help you with applications.
+    This is a demo script. It shows how to use Alan.
+    You can create dialogs and teach me.
+    For example: I can help navigate this application.
+`);
+
+
 
 
 
