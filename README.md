@@ -10,7 +10,9 @@ Bu android uygulaması Alan AI Apı kullanarak listeye eleman ekleme, silme, gü
 # Project Display Video <p> 
 
 
-https://github.com/oykuyildirim/alan_robot/assets/37236494/c85c0cc2-17e4-4f03-a950-215c5a57b3d7
+
+https://github.com/oykuyildirim/alan_robot/assets/37236494/e12cd9a3-9618-44f4-a938-022ad88e184c
+
 
 # Alan AI STUDIO Code <p>
 
