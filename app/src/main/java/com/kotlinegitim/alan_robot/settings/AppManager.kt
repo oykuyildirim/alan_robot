@@ -123,7 +123,6 @@ class AppManager {
 
                 act.runOnUiThread{
                     setAdaptor(listview,act,true)
-                    listItem.removeAll(listItem)
                     showAllListItems(act,db,listview,false)
                 }
             }
@@ -188,9 +187,7 @@ class AppManager {
         }
         else{
             listItem.removeAll(listItem)
-            adapter.clear()
-            listview.adapter = adapter
-            adapter.notifyDataSetChanged()
+
         }
 
 
